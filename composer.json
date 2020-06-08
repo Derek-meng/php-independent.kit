@@ -1,0 +1,33 @@
+{
+  "name": "derek/php-independent.kit",
+  "version": "1.0.0",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Derekmeng",
+      "email": "a0985265734@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Independent\\Kit\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Independent\\Kit\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
