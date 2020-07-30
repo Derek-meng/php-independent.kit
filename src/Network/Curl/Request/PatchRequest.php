@@ -9,6 +9,8 @@ class PatchRequest extends AbstractMethodRequest
      */
     public function encodeParams()
     {
+        curl_setopt($this->curl->getCurl(), CURLOPT_POSTFIELDS, json_encode($this->curl->getOriginParams()));
+
         return $this;
     }
 
@@ -17,6 +19,8 @@ class PatchRequest extends AbstractMethodRequest
      */
     public function setOptions()
     {
+        curl_setopt($this->curl->getCurl(), CURLOPT_CUSTOMREQUEST, "PATCH");
+
         return $this;
     }
 }
