@@ -1,6 +1,6 @@
 {
   "name": "derek-meng/php-independent.kit",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -20,10 +20,10 @@
     }
   },
   "require": {
-    "php": ">=7.1"
+    "php": ">=8.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^7"
+    "phpunit/phpunit": "^9.0"
   },
   "minimum-stability": "stable",
   "prefer-stable": true,

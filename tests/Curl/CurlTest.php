@@ -4,6 +4,7 @@ namespace Independent\Kit\Tests\Curl;
 
 use Independent\Kit\Network\Curl\Curl;
 use Independent\Kit\Network\Curl\HttpPostFieldsBuilder;
+use Independent\Kit\Test2;
 use PHPUnit\Framework\TestCase;
 
 class CurlTest extends TestCase

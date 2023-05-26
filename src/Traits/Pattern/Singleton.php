@@ -10,11 +10,6 @@ trait Singleton
      */
     protected static $INSTANCES = null;
 
-    final private function __construct(...$parameters)
-    {
-        $this->init(...$parameters);
-    }
-
     /**
      * Initialize class.
      * @param array $parameters
