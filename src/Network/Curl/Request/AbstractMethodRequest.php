@@ -15,8 +15,17 @@ abstract class AbstractMethodRequest implements IHttpMethodRequest
      */
     protected $curl;
 
-    protected function init(Curl $curl)
+    public function __construct(...$parameters)
     {
-        $this->curl = $curl;
+        $this->init(...$parameters);
+    }
+
+    protected function init(...$parameters)
+    {
+        foreach ($parameters as $parameter) {
+            if ($parameter instanceof  Curl) {
+                $this->curl= $parameter;
+            }
+        }
     }
 }
