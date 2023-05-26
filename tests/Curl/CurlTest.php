@@ -11,7 +11,6 @@ class CurlTest extends TestCase
 {
     public function testGet()
     {
-        $this->assertTrue(true);
         $client = new Curl();
         $response = $client->get('http://derek.app.dev.com', [
             'name'  => 'derek',
